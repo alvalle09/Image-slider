@@ -1,0 +1,28 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My title</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <style>
+            .red {color: red;};
+            .blue {color: blue;};
+        </style>
+        <script>
+            $(document).ready(function(){
+                //$('.myLink').on('click', function() {
+                $('.myLink').click(function() {
+                    $('h1').addClass('red');
+                    $('h1').text("Hello!");
+                    $('h1').slideToggle(250); //fadeToggle, etc... check 'em out
+                    $('h1').append('<h3>Another h3 </h3>');
+                    $('h1').css('font-size', '75px');
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <h1>Welcome!</h1>
+        <a href="#" class="myLink">Click Me</a>
+    </body>
+</html>
