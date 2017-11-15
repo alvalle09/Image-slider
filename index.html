@@ -1,28 +1,63 @@
-
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>My title</title>
+
+<head>
+    <title>jQuery Content Slider</title>
+    <<link rel="stylesheet" href="css/style.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <style>
-            .red {color: red;};
-            .blue {color: blue;};
-        </style>
-        <script>
-            $(document).ready(function(){
-                //$('.myLink').on('click', function() {
-                $('.myLink').click(function() {
-                    $('h1').addClass('red');
-                    $('h1').text("Hello!");
-                    $('h1').slideToggle(250); //fadeToggle, etc... check 'em out
-                    $('h1').append('<h3>Another h3 </h3>');
-                    $('h1').css('font-size', '75px');
-                });
-            });
-        </script>
-    </head>
-    <body>
-        <h1>Welcome!</h1>
-        <a href="#" class="myLink">Click Me</a>
-    </body>
+
+</head>
+
+<body>
+    <div id="container">
+        <header>
+
+        </header>
+        <img src="img/arrow-left.png" alt="Prev">
+
+        <div id="slider">
+            <div class="slide active">
+                <div class="slide-copy">
+                    <h2>Slider One</h2>
+                    <p>Loren ipsum asdf asdf adsf asdf asdfasdfadsfasdfjiupiopoljkl ; j;lkjr;lkw;jrlkj;</p>
+                </div>
+                <img src="img/slide1.jpg" alt="image1">
+            </div>
+
+            <div class="slide">
+                <div class="slide-copy">
+                    <h2>Slider One</h2>
+                    <p>Loren ipsum asdf asdf adsf asdf asdfasdfadsfasdfjiupiopoljkl ; j;lkjr;lkw;jrlkj;</p>
+                </div>
+                <img src="img/slide2.jpg" alt="image2">
+            </div>
+
+            <div class="slide">
+                <div class="slide-copy">
+                    <h2>Slider One</h2>
+                    <p>Loren ipsum asdf asdf adsf asdf asdfasdfadsfasdfjiupiopoljkl ; j;lkjr;lkw;jrlkj;</p>
+                </div>
+                <img src="img/slide3.jpg" alt="image3">
+            </div>
+            <div class="slide">
+                <div class="slide-copy">
+                    <h2>Slider One</h2>
+                    <p>Loren ipsum asdf asdf adsf asdf asdfasdfadsfasdfjiupiopoljkl ; j;lkjr;lkw;jrlkj;</p>
+                </div>
+                <img src="img/slide4.jpg" alt="image4">
+            </div>
+
+            <div class="slide">
+                <div class="slide-copy">
+                    <h2>Slider One</h2>
+                    <p>Loren ipsum asdf asdf adsf asdf asdfasdfadsfasdfjiupiopoljkl ; j;lkjr;lkw;jrlkj;</p>
+                </div>
+                <img src="img/slide5.jpg" alt="image5">
+            </div>
+        </div>
+        <img src="img/arrow-right.png" alt="Next">
+
+    </div>
+</body>
+
 </html>
